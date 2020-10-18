@@ -1,6 +1,5 @@
-// introcpp.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//Задача Да се въведе цяло четирицифрено число. Да се изведе сумата, произведението и средноаритметично от цифрите му.
-#include <iostream>
+ //Р—Р°РґР°С‡Р° Р”Р° СЃРµ РІСЉРІРµРґРµ С†СЏР»Рѕ С‡РµС‚РёСЂРёС†РёС„СЂРµРЅРѕ С‡РёСЃР»Рѕ. Р”Р° СЃРµ РёР·РІРµРґРµ СЃСѓРјР°С‚Р°, РїСЂРѕРёР·РІРµРґРµРЅРёРµС‚Рѕ Рё СЃСЂРµРґРЅРѕР°СЂРёС‚РјРµС‚РёС‡РЅРѕ РѕС‚ С†РёС„СЂРёС‚Рµ РјСѓ.
+#include<iostream>
 
 using namespace std;
 int main()
@@ -30,14 +29,3 @@ int main()
 
 
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
