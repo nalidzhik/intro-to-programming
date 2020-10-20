@@ -31,5 +31,12 @@
 *.out
 *.app
 
-# Visual Studio
-Debug/
+# Visual Studio Build results
+[Dd]ebug/
+
+# Visual Studio User-specific files
+*.user
+*.vcxproj.filters
+
+# Visual Studio cache/options directory
+.vs/
