@@ -4,6 +4,18 @@ using namespace std;
 
 int main()
 {
-     // TODO: work later on this task
+    double number;
+    cin >> number;
+    char enterOperation = '=';
+    do
+    {
+        cin >> number;
+    } while (number != enterOperation);
+    char plusOperation = '+';
+    char minusOperation = '-';
+    char mulOperation = '*';
+    char divOperation = '/';
+
+
     return 0;
 }
