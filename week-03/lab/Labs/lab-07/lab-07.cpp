@@ -9,6 +9,7 @@ int main()
     char enterOperation = '=';
     do
     {
+       
         cin >> number;
     } while (number != enterOperation);
     char plusOperation = '+';

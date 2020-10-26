@@ -3,8 +3,8 @@ using namespace std;
 
 int main()
 {
-
-    int a, b, temp;
+    // 1 way
+  /*  int a, b, temp;
     cin >> a >> b;
     cout << "Before swapping." << endl;
     cout << "a = " << a << ", b = " << b << endl;
@@ -14,7 +14,15 @@ int main()
     b = temp;
 
     cout << "\nAfter swapping." << endl;
-    cout << "a = " << a << ", b = " << b << endl;
+    cout << "a = " << a << ", b = " << b << endl; */
+
+    // 2 way
+    int a;
+    cin >> a;
+    int b;
+    cin >> b;
+    cout << a << " " << b << endl;
+    cout << b << " " << a << endl;
 
     return 0;
 }

@@ -11,11 +11,37 @@ int main()
 	int b;
 	cout << "Input an integer:";
 	cin >> b;
-	bool isPrimeA = true;
+	bool isPrimeAandB = true;
+	int min = 0;
+	if (a > b)
+	{
+		min=b;
+	}
+	else
+	{
+		min = a;
+	}
+	for (int i = 2;i <= min;i++)
+	{
+		if (a % i == 0 && b % i == 0)
+		{
+			isPrimeAandB = false;
+			break;
+		}
+	}
+	if (isPrimeAandB)
+	{
+		cout << "true" << endl;
+	}
+	else
+	{
+		cout << "false" << endl;
+	}
+/*	bool isPrimeA = true;
 	bool isPrimeB = true;
 	for (int i = 2;i < a; i++)
 	{
-		if (a % i == 0)
+		if (a % i == 0 )
 		{
 			isPrimeA = false;
 			break;
@@ -36,6 +62,7 @@ int main()
 	else
 	{
 		cout << "false" << endl;
-	}
+	} */
+
 	return 0;
 }
