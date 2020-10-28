@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-	// TODO (nalidzhik): fix this task
+
 	int a;
 	cout << "Input an integer:";
 	cin >> a;
