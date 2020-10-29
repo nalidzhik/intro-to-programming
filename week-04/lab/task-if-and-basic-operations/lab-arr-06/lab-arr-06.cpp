@@ -6,7 +6,6 @@ using namespace std;
 
 void getPrintMinAndMax(int);
 
-
 int main()
 {
 	int n;
@@ -31,6 +30,5 @@ void getPrintMinAndMax(int n)
 	cout << "\nMin Element = " << *min_element(numbers.begin(), numbers.end());
 
 	cout << "\nMax Element = " << *max_element(numbers.begin(), numbers.end());
-
 
 }

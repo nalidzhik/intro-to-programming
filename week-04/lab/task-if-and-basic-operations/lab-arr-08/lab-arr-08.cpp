@@ -10,7 +10,6 @@ int main()
 	int n;
 	cin >> n;
 
-
 	getCountCouples(n);
 
 	return 0;

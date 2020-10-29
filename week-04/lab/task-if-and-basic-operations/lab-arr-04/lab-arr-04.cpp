@@ -1,10 +1,10 @@
+//TODO later
 #include <iostream>
 #include <vector>
 
 using namespace std;
 
 void getPrintSwap(int);
-
 
 int main()
 {
@@ -32,7 +32,7 @@ void getPrintSwap(int n)
 		numbers.push_back(number);
 	}
 
-	for (i;;)
+	for (int i;;)
 	{
 
 	}
