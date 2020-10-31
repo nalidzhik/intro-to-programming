@@ -37,10 +37,13 @@ int  getRepetitiveElements(int n, int m)
 	}
 	
 	int counter = 0;
-	int min = n;
+
+/*	int min = n;
+	int max = m;
 	if (n >= m)
 	{
 		min = m;
+		max = n;
 	}
 
 	for (int i = 0; i < min; i++)
@@ -49,8 +52,18 @@ int  getRepetitiveElements(int n, int m)
 		{
 			counter++;
 		}
-	}
+	} */
 
+	for (int i = 0;i < n; i++)
+	{
+		for (int j = 0;j < m;j++)
+		{
+			if (nArr[i] == mArr[j])
+			{
+				counter++;
+			}
+		}
+	}
 	return counter;
 
 	delete[] nArr;

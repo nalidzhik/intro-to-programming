@@ -27,8 +27,32 @@ void getPrintMinAndMax(int n)
 		numbers.push_back(number);
 	}
 
-	cout << "\nMin Element = " << *min_element(numbers.begin(), numbers.end());
+	//cout << "\nMin Element = " << *min_element(numbers.begin(), numbers.end());
 
-	cout << "\nMax Element = " << *max_element(numbers.begin(), numbers.end());
+	//cout << "\nMax Element = " << *max_element(numbers.begin(), numbers.end());
 
+	int min = numbers.at(0);
+
+	for (int i = 0;i < n;i++)
+	{
+		if (min > numbers.at(i))
+		{
+			min = numbers.at(i);
+
+		}
+	}
+
+	cout << min << endl;
+
+	int max = numbers.at(0);
+
+	for (int i = 0;i < n;i++)
+	{
+		if (max < numbers.at(i))
+		{
+			max = numbers.at(i);
+		}
+	}
+
+	cout << max << endl;
 }

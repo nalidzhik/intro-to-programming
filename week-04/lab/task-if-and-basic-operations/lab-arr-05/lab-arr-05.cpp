@@ -2,6 +2,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm> 
+ 
 
 using namespace std;
 
@@ -27,4 +28,22 @@ void getPrintMinAndMax(int n)
 		cin >> number;
 		numbers.push_back(number);
 	}
+
+	int counter = 0;
+	int temp = numbers.at(0);
+
+	for(int i=0;i<n;i++)
+	{
+		if (temp == numbers.at(i))
+		{
+			counter = counter + 1;
+		}
+		 
+	}
+	cout << counter << endl;
+
+	 
+	 
+
+
 }

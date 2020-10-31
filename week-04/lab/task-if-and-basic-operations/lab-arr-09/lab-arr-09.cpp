@@ -40,19 +40,16 @@ int getRepetitiveElements(int n, int m)
 	}
 
 	int counter = 0;
-	int min = n;
-	if (n >= m)
+	 
+	for (int i = 0; i < n; i++)
 	{
-		min = m;
-	}
-
-	for (int i = 0; i < min; i++)
-	{
-		if (numbersOfN[i] == numbersOfM[i])
+		for (int j = 0;j < m;j++)
 		{
-			++counter;
+			if (numbersOfN.at(i) == numbersOfM.at(j))
+			{
+				++counter;
+			}
 		}
 	}
-
 	return counter;
 }

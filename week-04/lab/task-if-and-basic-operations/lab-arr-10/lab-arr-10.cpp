@@ -21,6 +21,20 @@ int main()
 
 void getPrintMatrix(int n, int m)
 {
-	vector<int> numbers;
-	vector<int> rows;
+	vector<vector<int>> matrix(n, vector<int>(m));
+
+	 
+    for (int i = 0; i < n; i++)
+    {
+        vector<int> myvector;
+        for (int j = 0; j < m; j++)
+        {
+            int tempVal = 0;
+            cin >> tempVal;
+            myvector.push_back(tempVal);
+        }
+        matrix.push_back(myvector);
+    }
+
+     
 }
