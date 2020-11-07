@@ -17,23 +17,29 @@ int main()
 
     int mid;
     mid = numberElements / 2;
+    int count = 0;
 
-    for (int i = 0; i < mid; i++)
+    for (int i = 0; i <= mid; i++)
     {
         int left = arr[0];
         int right = arr[numberElements - 1];
 
-        for (int j = right; j > mid; j--)
+        for (int j = right; j >= mid; j--)
         {
             if (arr[i] == arr[j])
             {
-                cout << "yes" << endl;
-            }
-            else
-            {
-                cout << "no" << endl;
+                ++count;
             }
         }
+    }
+
+    if (count == mid)
+    {
+        cout << "yes" << endl;
+    }
+    else
+    {
+        cout << "no" << endl;
     }
 
     return 0;
