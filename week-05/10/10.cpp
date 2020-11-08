@@ -29,7 +29,7 @@ int main()
 			{
 				cout << table[i][j] << " ";
 			}
-			// Confition for the elements below the diagonal
+			// Condition for the elements below the diagonal
 			if (i > j)
 			{
 				cout << table[i][j] << " ";
@@ -53,6 +53,7 @@ int main()
 
 	cout << endl;
 
+ 
 	for (int i = 0; i < n; ++i)
 	{
 		delete[] table[i];

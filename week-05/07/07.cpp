@@ -15,25 +15,17 @@ int main()
         cin >> arr[i];
     }
 
-    int mid;
-    mid = numberElements / 2;
-    int count = 0;
+    bool sym = true;
 
-    for (int i = 0; i <= mid; i++)
+    for ( int i = 0;i < numberElements;i++) 
     {
-        int left = arr[0];
-        int right = arr[numberElements - 1];
-
-        for (int j = right; j >= mid; j--)
+        if (arr[i] != arr[numberElements - 1 - i])
         {
-            if (arr[i] == arr[j])
-            {
-                ++count;
-            }
+            sym = false;
         }
     }
 
-    if (count == mid)
+    if (sym)
     {
         cout << "yes" << endl;
     }
@@ -41,6 +33,7 @@ int main()
     {
         cout << "no" << endl;
     }
+
 
     return 0;
 }

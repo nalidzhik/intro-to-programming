@@ -4,15 +4,13 @@ using namespace std;
 
 int main()
 {
-	//TODO later
 	int n;
 	cin >> n;
 	int m;
 	cin >> m;
 
 	int** table = new int* [n];
-	int* diagonal = new int[m];
-
+	
 	for (int i = 0; i < n; i++)
 	{
 		table[i] = new int[m];
@@ -25,6 +23,30 @@ int main()
 		}
 	}
 
+	int p = 1;
+
+	for (int i = 0; i < n; i++)
+	{
+		for (int j = 0; j < m; j++)
+		{
+			if (i > j)
+			{
+				if ((j + 1 + i + 1) % 2 == 0)
+				{
+					p *= table[i][j];
+				}
+			}
+		}
+	}
+
+	cout << p << endl;
+
+	for (int i = 0; i < n; ++i)
+	{
+		delete[] table[i];
+	}
+
+	delete[] table;
 
 	return 0;
 }
