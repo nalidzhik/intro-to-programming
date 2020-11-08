@@ -43,7 +43,7 @@ int main()
 
 	for (int i = 0; i < n; i++)
 	{
-		if (numbersOfN.at(i) % 3 == 0)
+		if (numbersOfN.at(i) % 3 != 0)
 		{
 			cout << numbersOfN.at(i) << " ";
 		}
